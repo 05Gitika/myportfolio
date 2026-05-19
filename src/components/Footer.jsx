@@ -22,7 +22,7 @@ export default function Footer() {
 
           {/* LinkedIn */}
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/gitika-chahar-29668a307/"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-[#111] px-6 py-3 rounded-2xl border border-gray-700 hover:border-[#6e06f2] hover:scale-105 transition-all duration-300"
@@ -32,7 +32,7 @@ export default function Footer() {
 
           {/* GitHub */}
           <a
-            href="https://github.com"
+            href="https://github.com/05Gitika"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-[#111] px-6 py-3 rounded-2xl border border-gray-700 hover:border-[#6e06f2] hover:scale-105 transition-all duration-300"
@@ -42,7 +42,7 @@ export default function Footer() {
 
           {/* LeetCode */}
           <a
-            href="https://leetcode.com"
+            href="https://leetcode.com/u/05gitika/"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-[#111] px-6 py-3 rounded-2xl border border-gray-700 hover:border-[#6e06f2] hover:scale-105 transition-all duration-300"
