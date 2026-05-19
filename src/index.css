@@ -1,0 +1,14 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "@fontsource-variable/geist";
+
+@custom-variant dark (&:is(.dark *));
+
+body {
+  font-family: "Geist Variable", sans-serif;
+  background-color: #FCFCFD;
+}
+
+html{
+  scroll-behavior: smooth;
+}
