@@ -3,7 +3,8 @@ import Hero from "./components/Hero"
 import About from "./components/About"
 import Projects from "./components/Projects"
 import Contact from "./components/Contacts"
-import Footer from "./components/Footer"  
+import Footer from "./components/Footer"
+import Certificate from "./components/Certificate"
 
 function App() {
   return (
@@ -25,6 +26,10 @@ function App() {
       <section id="contact">
         <Contact />
       </section>
+
+    <section id="certificates">
+      <Certificate />
+    </section>
       <Footer />
     </>
   )
