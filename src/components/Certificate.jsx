@@ -12,8 +12,9 @@ export default function Certificate() {
       title: "Artificial Intelligence Fundamentals",
       issuer: "IBM SkillsBuild",
       date: "January 2026",
+
       description:
-        "Learned core concepts of Artificial Intelligence including machine learning fundamentals, AI applications, problem solving approaches, and industry use cases.",
+        "Learned the fundamentals of Artificial Intelligence including machine learning concepts, AI applications, and real-world problem solving approaches.",
 
       skills: [
         "Artificial Intelligence",
@@ -31,7 +32,7 @@ export default function Certificate() {
       date: "December 2024",
 
       description:
-        "Completed a beginner-friendly full stack development course covering frontend and backend technologies including HTML, CSS, React, and Node.js.",
+        "Completed a beginner full stack web development course covering frontend and backend technologies including HTML, CSS, React, and Node.js.",
 
       skills: [
         "HTML",
@@ -48,40 +49,47 @@ export default function Certificate() {
   return (
     <section
       id="certifications"
-      className="bg-black text-white py-20 px-6"
+      className="bg-[#f5f1fa] py-20 px-6"
     >
       {/* Heading */}
       <div className="max-w-6xl mx-auto text-center mb-16">
-        <h2 className="text-4xl font-bold mb-4">
+        
+        <p className="text-purple-700 font-semibold tracking-wider uppercase mb-3">
+          Achievements
+        </p>
+
+        <h2 className="text-5xl font-bold text-gray-900 mb-5">
           Certifications
         </h2>
 
-        <p className="text-gray-400 max-w-2xl mx-auto">
-          Certifications that helped me build practical skills in
-          web development, AI fundamentals, and software engineering.
+        <p className="text-gray-600 max-w-2xl mx-auto text-lg leading-relaxed">
+          Certifications that helped me strengthen my skills in
+          Artificial Intelligence, Full Stack Web Development,
+          and modern software technologies.
         </p>
       </div>
 
       {/* Cards */}
-      <div className="max-w-6xl mx-auto grid gap-10">
+      <div className="max-w-6xl mx-auto grid gap-12">
         {certificates.map((cert, index) => (
           <div
             key={index}
             className="
-              bg-zinc-900
-              border border-zinc-800
+              bg-white/70
+              backdrop-blur-md
+              border border-purple-200
               rounded-3xl
               overflow-hidden
-              shadow-lg
-              hover:shadow-cyan-500/20
-              hover:border-cyan-400
-              transition-all duration-300
+              shadow-xl
+              hover:shadow-purple-300/40
+              transition-all
+              duration-300
               hover:scale-[1.01]
             "
           >
-            <div className="grid md:grid-cols-2 gap-6 p-6">
+            <div className="grid md:grid-cols-2 gap-8 p-6 md:p-8">
               
-              {/* Certificate Image */}
+              {/* Image Section */}
               <div className="overflow-hidden rounded-2xl">
                 <img
                   src={cert.image}
@@ -91,43 +99,50 @@ export default function Certificate() {
                     h-full
                     object-cover
                     rounded-2xl
+                    transition-transform
+                    duration-500
                     hover:scale-105
-                    transition duration-500
                   "
                 />
               </div>
 
-              {/* Content */}
+              {/* Content Section */}
               <div className="flex flex-col justify-center">
                 
-                <p className="text-cyan-400 font-medium mb-2">
+                {/* Issuer */}
+                <p className="text-purple-700 font-semibold mb-3 tracking-wide">
                   {cert.issuer}
                 </p>
 
-                <h3 className="text-3xl font-bold mb-4">
+                {/* Title */}
+                <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 leading-tight">
                   {cert.title}
                 </h3>
 
-                <p className="text-gray-400 mb-4">
-                  Issued: {cert.date}
+                {/* Date */}
+                <p className="text-gray-500 mb-5">
+                  Issued • {cert.date}
                 </p>
 
-                <p className="text-gray-300 leading-relaxed mb-5">
+                {/* Description */}
+                <p className="text-gray-700 leading-relaxed mb-6 text-lg">
                   {cert.description}
                 </p>
 
                 {/* Skills */}
-                <div className="flex flex-wrap gap-2 mb-6">
+                <div className="flex flex-wrap gap-3 mb-8">
                   {cert.skills.map((skill, i) => (
                     <span
                       key={i}
                       className="
-                        px-3 py-1
+                        px-4 py-2
                         rounded-full
                         text-sm
-                        bg-cyan-500/10
-                        text-cyan-400
-                        border border-cyan-500/20
+                        font-medium
+                        bg-purple-100
+                        text-purple-700
+                        border
+                        border-purple-200
                       "
                     >
                       {skill}
@@ -143,16 +158,23 @@ export default function Certificate() {
                   className="
                     inline-block
                     w-fit
-                    px-6 py-3
+                    px-7 py-3
                     rounded-xl
-                    bg-cyan-500
-                    text-black
+                    bg-gradient-to-r
+                    from-purple-700
+                    to-violet-500
+                    text-white
                     font-semibold
-                    hover:bg-cyan-400
-                    transition
+                    transition-all
+                    duration-300
+                    hover:from-purple-800
+                    hover:to-violet-600
+                    shadow-lg
+                    shadow-purple-300/40
+                    hover:scale-105
                   "
                 >
-                  View PDF
+                  View Certificate
                 </a>
               </div>
             </div>
